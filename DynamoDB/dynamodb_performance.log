@@ -1,0 +1,80 @@
+2024-11-30 14:13:55 | INFO     | Executing Regional Query (Asia)...
+2024-11-30 14:14:00 | INFO     | 
+==================================================
+2024-11-30 14:14:00 | INFO     | Performance Metrics for: Asia Regional Query
+2024-11-30 14:14:00 | INFO     | ==================================================
+2024-11-30 14:14:00 | INFO     | Total Execution Time          : 4670.14 ms
+2024-11-30 14:14:00 | INFO     | Throughput                    : 42.83 queries/sec
+2024-11-30 14:14:00 | INFO     | Average Response Time         : 456.54 ms
+2024-11-30 14:14:00 | INFO     | Minimum Response Time         : 269.48 ms
+2024-11-30 14:14:00 | INFO     | Maximum Response Time         : 1696.84 ms
+2024-11-30 14:14:00 | INFO     | Response Time Std Deviation   : 406.37 ms
+2024-11-30 14:14:00 | INFO     | CPU Utilization Increase      : 4.60 %
+2024-11-30 14:14:00 | INFO     | Memory Utilization Increase   : 0.10 %
+2024-11-30 14:14:00 | INFO     | ==================================================
+
+2024-11-30 14:14:00 | INFO     | Regional Query Metrics: {'total_execution_time_ms': 4670.138165995013, 'throughput_queries_per_sec': 42.82528543936307, 'avg_response_time_ms': 456.54078813182423, 'min_response_time_ms': 269.4822499761358, 'max_response_time_ms': 1696.8376250006258, 'response_time_std_dev_ms': 406.3672004184758, 'cpu_utilization_increase': 4.600000000000001, 'memory_utilization_increase': 0.09999999999999432}
+2024-11-30 14:14:00 | INFO     | Executing Regional Query (North America)...
+2024-11-30 14:14:01 | INFO     | 
+==================================================
+2024-11-30 14:14:01 | INFO     | Performance Metrics for: North America Regional Query
+2024-11-30 14:14:01 | INFO     | ==================================================
+2024-11-30 14:14:01 | INFO     | Total Execution Time          : 1356.61 ms
+2024-11-30 14:14:01 | INFO     | Throughput                    : 147.43 queries/sec
+2024-11-30 14:14:01 | INFO     | Average Response Time         : 127.91 ms
+2024-11-30 14:14:01 | INFO     | Minimum Response Time         : 73.29 ms
+2024-11-30 14:14:01 | INFO     | Maximum Response Time         : 490.19 ms
+2024-11-30 14:14:01 | INFO     | Response Time Std Deviation   : 110.01 ms
+2024-11-30 14:14:01 | INFO     | CPU Utilization Increase      : -64.00 %
+2024-11-30 14:14:01 | INFO     | Memory Utilization Increase   : 0.60 %
+2024-11-30 14:14:01 | INFO     | ==================================================
+
+2024-11-30 14:14:01 | INFO     | Regional Query Metrics: {'total_execution_time_ms': 1356.613042007666, 'throughput_queries_per_sec': 147.42597469357796, 'avg_response_time_ms': 127.90544102812419, 'min_response_time_ms': 73.28716694610193, 'max_response_time_ms': 490.18775002332404, 'response_time_std_dev_ms': 110.0121205072074, 'cpu_utilization_increase': -64.0, 'memory_utilization_increase': 0.5999999999999943}
+2024-11-30 14:14:01 | INFO     | Executing Regional Query (Asia)...
+2024-11-30 14:14:04 | INFO     | 
+==================================================
+2024-11-30 14:14:04 | INFO     | Performance Metrics for: South America Regional Query
+2024-11-30 14:14:04 | INFO     | ==================================================
+2024-11-30 14:14:04 | INFO     | Total Execution Time          : 3099.45 ms
+2024-11-30 14:14:04 | INFO     | Throughput                    : 64.53 queries/sec
+2024-11-30 14:14:04 | INFO     | Average Response Time         : 286.59 ms
+2024-11-30 14:14:04 | INFO     | Minimum Response Time         : 186.02 ms
+2024-11-30 14:14:04 | INFO     | Maximum Response Time         : 986.84 ms
+2024-11-30 14:14:04 | INFO     | Response Time Std Deviation   : 229.04 ms
+2024-11-30 14:14:04 | INFO     | CPU Utilization Increase      : 10.00 %
+2024-11-30 14:14:04 | INFO     | Memory Utilization Increase   : 0.00 %
+2024-11-30 14:14:04 | INFO     | ==================================================
+
+2024-11-30 14:14:04 | INFO     | Regional Query Metrics: {'total_execution_time_ms': 3099.4542079861276, 'throughput_queries_per_sec': 64.52748986730478, 'avg_response_time_ms': 286.5910202183295, 'min_response_time_ms': 186.020124994684, 'max_response_time_ms': 986.8365000002086, 'response_time_std_dev_ms': 229.03900177668606, 'cpu_utilization_increase': 10.0, 'memory_utilization_increase': 0.0}
+2024-11-30 14:14:04 | INFO     | Executing Regional Query (Asia)...
+2024-11-30 14:14:09 | INFO     | 
+==================================================
+2024-11-30 14:14:09 | INFO     | Performance Metrics for: Europe Regional Query
+2024-11-30 14:14:09 | INFO     | ==================================================
+2024-11-30 14:14:09 | INFO     | Total Execution Time          : 4763.36 ms
+2024-11-30 14:14:09 | INFO     | Throughput                    : 41.99 queries/sec
+2024-11-30 14:14:09 | INFO     | Average Response Time         : 328.07 ms
+2024-11-30 14:14:09 | INFO     | Minimum Response Time         : 155.57 ms
+2024-11-30 14:14:09 | INFO     | Maximum Response Time         : 4754.75 ms
+2024-11-30 14:14:09 | INFO     | Response Time Std Deviation   : 490.30 ms
+2024-11-30 14:14:09 | INFO     | CPU Utilization Increase      : 8.80 %
+2024-11-30 14:14:09 | INFO     | Memory Utilization Increase   : -0.90 %
+2024-11-30 14:14:09 | INFO     | ==================================================
+
+2024-11-30 14:14:09 | INFO     | Regional Query Metrics: {'total_execution_time_ms': 4763.362292025704, 'throughput_queries_per_sec': 41.987148517931956, 'avg_response_time_ms': 328.0712916707853, 'min_response_time_ms': 155.57016601087525, 'max_response_time_ms': 4754.749041981995, 'response_time_std_dev_ms': 490.2983127734349, 'cpu_utilization_increase': 8.8, 'memory_utilization_increase': -0.8999999999999915}
+2024-11-30 14:14:09 | INFO     | Executing Global Query (All Regions)...
+2024-11-30 14:14:26 | INFO     | 
+==================================================
+2024-11-30 14:14:26 | INFO     | Performance Metrics for: Global Content Query
+2024-11-30 14:14:26 | INFO     | ==================================================
+2024-11-30 14:14:26 | INFO     | Total Execution Time          : 17351.12 ms
+2024-11-30 14:14:26 | INFO     | Throughput                    : 57.63 queries/sec
+2024-11-30 14:14:26 | INFO     | Average Response Time         : 1327.17 ms
+2024-11-30 14:14:26 | INFO     | Minimum Response Time         : 716.43 ms
+2024-11-30 14:14:26 | INFO     | Maximum Response Time         : 11835.05 ms
+2024-11-30 14:14:26 | INFO     | Response Time Std Deviation   : 935.47 ms
+2024-11-30 14:14:26 | INFO     | CPU Utilization Increase      : 16.10 %
+2024-11-30 14:14:26 | INFO     | Memory Utilization Increase   : 0.50 %
+2024-11-30 14:14:26 | INFO     | ==================================================
+
+2024-11-30 14:14:26 | INFO     | Global Query Metrics: {'total_execution_time_ms': 17351.116958016064, 'throughput_queries_per_sec': 57.6331773003241, 'avg_response_time_ms': 1327.167014406412, 'min_response_time_ms': 716.4314169785939, 'max_response_time_ms': 11835.049832996447, 'response_time_std_dev_ms': 935.4684667963257, 'cpu_utilization_increase': 16.1, 'memory_utilization_increase': 0.5}

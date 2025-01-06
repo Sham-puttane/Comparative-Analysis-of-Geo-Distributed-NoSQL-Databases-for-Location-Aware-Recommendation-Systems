@@ -1,0 +1,152 @@
+2024-11-29 20:04:35 | INFO     | Performance Test Started: Asia Regional Trends
+2024-11-29 20:04:35 | INFO     | Collection: regional_trends
+2024-11-29 20:04:35 | INFO     | Concurrent Users: 20
+2024-11-29 20:04:35 | INFO     | Total Requests: 200
+2024-11-29 20:04:35 | INFO     | Pipeline: [{'$match': {'region': 'Asia'}}, {'$sort': {'engagement_metrics.total_views': -1, 'engagement_metrics.total_likes': -1}}, {'$lookup': {'from': 'content', 'localField': 'top_content', 'foreignField': 'title', 'as': 'content_details'}}, {'$unwind': '$content_details'}, {'$project': {'_id': 0, 'Content Title': '$top_content', 'Content Type': '$content_details.type', 'Total Views': '$engagement_metrics.total_views', 'Total Likes': '$engagement_metrics.total_likes'}}, {'$limit': 10}]
+2024-11-29 20:04:35 | INFO     | 
+==================================================
+2024-11-29 20:04:35 | INFO     | Performance Metrics for: Asia Regional Trends
+2024-11-29 20:04:35 | INFO     | ==================================================
+2024-11-29 20:04:35 | INFO     | Total Execution Time          : 704.64 ms
+2024-11-29 20:04:35 | INFO     | Throughput                    : 283.83 queries/sec
+2024-11-29 20:04:35 | INFO     | Average Response Time         : 67.91 ms
+2024-11-29 20:04:35 | INFO     | Minimum Response Time         : 23.71 ms
+2024-11-29 20:04:35 | INFO     | Maximum Response Time         : 229.20 ms
+2024-11-29 20:04:35 | INFO     | Response Time Std Deviation   : 40.51 ms
+2024-11-29 20:04:35 | INFO     | CPU Utilization Increase      : 70.70 %
+2024-11-29 20:04:35 | INFO     | Memory Utilization Increase   : 0.00 %
+2024-11-29 20:04:35 | INFO     | ==================================================
+
+2024-11-29 20:04:35 | INFO     | Performance Test Started: Global Content Trends
+2024-11-29 20:04:35 | INFO     | Collection: regional_trends
+2024-11-29 20:04:35 | INFO     | Concurrent Users: 100
+2024-11-29 20:04:35 | INFO     | Total Requests: 1000
+2024-11-29 20:04:35 | INFO     | Pipeline: [{'$group': {'_id': '$top_content', 'total_views': {'$sum': '$engagement_metrics.total_views'}}}, {'$sort': {'total_views': -1}}, {'$limit': 5}]
+2024-11-29 20:04:38 | INFO     | 
+==================================================
+2024-11-29 20:04:38 | INFO     | Performance Metrics for: Global Content Trends
+2024-11-29 20:04:38 | INFO     | ==================================================
+2024-11-29 20:04:38 | INFO     | Total Execution Time          : 2236.44 ms
+2024-11-29 20:04:38 | INFO     | Throughput                    : 447.14 queries/sec
+2024-11-29 20:04:38 | INFO     | Average Response Time         : 121.35 ms
+2024-11-29 20:04:38 | INFO     | Minimum Response Time         : 5.48 ms
+2024-11-29 20:04:38 | INFO     | Maximum Response Time         : 586.15 ms
+2024-11-29 20:04:38 | INFO     | Response Time Std Deviation   : 114.07 ms
+2024-11-29 20:04:38 | INFO     | CPU Utilization Increase      : -0.90 %
+2024-11-29 20:04:38 | INFO     | Memory Utilization Increase   : 0.10 %
+2024-11-29 20:04:38 | INFO     | ==================================================
+
+2024-11-29 20:13:20 | INFO     | Performance Test Started: Europe Regional Trends
+2024-11-29 20:13:20 | INFO     | Collection: regional_trends
+2024-11-29 20:13:20 | INFO     | Concurrent Users: 20
+2024-11-29 20:13:20 | INFO     | Total Requests: 200
+2024-11-29 20:13:20 | INFO     | Pipeline: [{'$match': {'region': 'Europe'}}, {'$sort': {'engagement_metrics.total_views': -1, 'engagement_metrics.total_likes': -1}}, {'$lookup': {'from': 'content', 'localField': 'top_content', 'foreignField': 'title', 'as': 'content_details'}}, {'$unwind': '$content_details'}, {'$project': {'_id': 0, 'Content Title': '$top_content', 'Content Type': '$content_details.type', 'Total Views': '$engagement_metrics.total_views', 'Total Likes': '$engagement_metrics.total_likes'}}, {'$limit': 10}]
+2024-11-29 20:13:21 | INFO     | 
+==================================================
+2024-11-29 20:13:21 | INFO     | Performance Metrics for: Europe Regional Trends
+2024-11-29 20:13:21 | INFO     | ==================================================
+2024-11-29 20:13:21 | INFO     | Total Execution Time          : 577.03 ms
+2024-11-29 20:13:21 | INFO     | Throughput                    : 346.60 queries/sec
+2024-11-29 20:13:21 | INFO     | Average Response Time         : 54.55 ms
+2024-11-29 20:13:21 | INFO     | Minimum Response Time         : 22.68 ms
+2024-11-29 20:13:21 | INFO     | Maximum Response Time         : 156.18 ms
+2024-11-29 20:13:21 | INFO     | Response Time Std Deviation   : 26.19 ms
+2024-11-29 20:13:21 | INFO     | CPU Utilization Increase      : 61.40 %
+2024-11-29 20:13:21 | INFO     | Memory Utilization Increase   : 0.10 %
+2024-11-29 20:13:21 | INFO     | ==================================================
+
+2024-11-29 20:13:21 | INFO     | Performance Test Started: Global Content Trends
+2024-11-29 20:13:21 | INFO     | Collection: regional_trends
+2024-11-29 20:13:21 | INFO     | Concurrent Users: 100
+2024-11-29 20:13:21 | INFO     | Total Requests: 1000
+2024-11-29 20:13:21 | INFO     | Pipeline: [{'$group': {'_id': '$top_content', 'total_views': {'$sum': '$engagement_metrics.total_views'}}}, {'$sort': {'total_views': -1}}, {'$limit': 5}]
+2024-11-29 20:13:23 | INFO     | 
+==================================================
+2024-11-29 20:13:23 | INFO     | Performance Metrics for: Global Content Trends
+2024-11-29 20:13:23 | INFO     | ==================================================
+2024-11-29 20:13:23 | INFO     | Total Execution Time          : 1949.38 ms
+2024-11-29 20:13:23 | INFO     | Throughput                    : 512.98 queries/sec
+2024-11-29 20:13:23 | INFO     | Average Response Time         : 148.48 ms
+2024-11-29 20:13:23 | INFO     | Minimum Response Time         : 11.75 ms
+2024-11-29 20:13:23 | INFO     | Maximum Response Time         : 730.78 ms
+2024-11-29 20:13:23 | INFO     | Response Time Std Deviation   : 153.41 ms
+2024-11-29 20:13:23 | INFO     | CPU Utilization Increase      : 90.70 %
+2024-11-29 20:13:23 | INFO     | Memory Utilization Increase   : 0.10 %
+2024-11-29 20:13:23 | INFO     | ==================================================
+
+2024-11-29 21:50:06 | INFO     | Performance Test Started: South America Regional Trends
+2024-11-29 21:50:06 | INFO     | Collection: regional_trends
+2024-11-29 21:50:06 | INFO     | Concurrent Users: 20
+2024-11-29 21:50:06 | INFO     | Total Requests: 200
+2024-11-29 21:50:06 | INFO     | Pipeline: [{'$match': {'region': 'Europe'}}, {'$sort': {'engagement_metrics.total_views': -1, 'engagement_metrics.total_likes': -1}}, {'$lookup': {'from': 'content', 'localField': 'top_content', 'foreignField': 'title', 'as': 'content_details'}}, {'$unwind': '$content_details'}, {'$project': {'_id': 0, 'Content Title': '$top_content', 'Content Type': '$content_details.type', 'Total Views': '$engagement_metrics.total_views', 'Total Likes': '$engagement_metrics.total_likes'}}, {'$limit': 10}]
+2024-11-29 21:50:07 | INFO     | 
+==================================================
+2024-11-29 21:50:07 | INFO     | Performance Metrics for: North America Regional Trends
+2024-11-29 21:50:07 | INFO     | ==================================================
+2024-11-29 21:50:07 | INFO     | Total Execution Time          : 583.57 ms
+2024-11-29 21:50:07 | INFO     | Throughput                    : 342.72 queries/sec
+2024-11-29 21:50:07 | INFO     | Average Response Time         : 56.44 ms
+2024-11-29 21:50:07 | INFO     | Minimum Response Time         : 12.58 ms
+2024-11-29 21:50:07 | INFO     | Maximum Response Time         : 162.56 ms
+2024-11-29 21:50:07 | INFO     | Response Time Std Deviation   : 26.24 ms
+2024-11-29 21:50:07 | INFO     | CPU Utilization Increase      : 48.70 %
+2024-11-29 21:50:07 | INFO     | Memory Utilization Increase   : 0.10 %
+2024-11-29 21:50:07 | INFO     | ==================================================
+
+2024-11-29 21:50:07 | INFO     | Performance Test Started: Global Content Trends
+2024-11-29 21:50:07 | INFO     | Collection: regional_trends
+2024-11-29 21:50:07 | INFO     | Concurrent Users: 100
+2024-11-29 21:50:07 | INFO     | Total Requests: 1000
+2024-11-29 21:50:07 | INFO     | Pipeline: [{'$group': {'_id': '$top_content', 'total_views': {'$sum': '$engagement_metrics.total_views'}}}, {'$sort': {'total_views': -1}}, {'$limit': 5}]
+2024-11-29 21:50:09 | INFO     | 
+==================================================
+2024-11-29 21:50:09 | INFO     | Performance Metrics for: Global Content Trends
+2024-11-29 21:50:09 | INFO     | ==================================================
+2024-11-29 21:50:09 | INFO     | Total Execution Time          : 2450.97 ms
+2024-11-29 21:50:09 | INFO     | Throughput                    : 408.00 queries/sec
+2024-11-29 21:50:09 | INFO     | Average Response Time         : 175.25 ms
+2024-11-29 21:50:09 | INFO     | Minimum Response Time         : 14.73 ms
+2024-11-29 21:50:09 | INFO     | Maximum Response Time         : 642.87 ms
+2024-11-29 21:50:09 | INFO     | Response Time Std Deviation   : 114.69 ms
+2024-11-29 21:50:09 | INFO     | CPU Utilization Increase      : 95.60 %
+2024-11-29 21:50:09 | INFO     | Memory Utilization Increase   : 0.30 %
+2024-11-29 21:50:09 | INFO     | ==================================================
+
+2024-11-29 22:09:17 | INFO     | Performance Test Started: South America Regional Trends
+2024-11-29 22:09:17 | INFO     | Collection: regional_trends
+2024-11-29 22:09:17 | INFO     | Concurrent Users: 20
+2024-11-29 22:09:17 | INFO     | Total Requests: 200
+2024-11-29 22:09:17 | INFO     | Pipeline: [{'$match': {'region': 'South America'}}, {'$sort': {'engagement_metrics.total_views': -1, 'engagement_metrics.total_likes': -1}}, {'$lookup': {'from': 'content', 'localField': 'top_content', 'foreignField': 'title', 'as': 'content_details'}}, {'$unwind': '$content_details'}, {'$project': {'_id': 0, 'Content Title': '$top_content', 'Content Type': '$content_details.type', 'Total Views': '$engagement_metrics.total_views', 'Total Likes': '$engagement_metrics.total_likes'}}, {'$limit': 10}]
+2024-11-29 22:09:18 | INFO     | 
+==================================================
+2024-11-29 22:09:18 | INFO     | Performance Metrics for: South America Regional Trends
+2024-11-29 22:09:18 | INFO     | ==================================================
+2024-11-29 22:09:18 | INFO     | Total Execution Time          : 673.04 ms
+2024-11-29 22:09:18 | INFO     | Throughput                    : 297.16 queries/sec
+2024-11-29 22:09:18 | INFO     | Average Response Time         : 64.08 ms
+2024-11-29 22:09:18 | INFO     | Minimum Response Time         : 20.70 ms
+2024-11-29 22:09:18 | INFO     | Maximum Response Time         : 307.35 ms
+2024-11-29 22:09:18 | INFO     | Response Time Std Deviation   : 41.34 ms
+2024-11-29 22:09:18 | INFO     | CPU Utilization Increase      : 86.90 %
+2024-11-29 22:09:18 | INFO     | Memory Utilization Increase   : 0.00 %
+2024-11-29 22:09:18 | INFO     | ==================================================
+
+2024-11-29 22:09:18 | INFO     | Performance Test Started: Global Content Trends
+2024-11-29 22:09:18 | INFO     | Collection: regional_trends
+2024-11-29 22:09:18 | INFO     | Concurrent Users: 100
+2024-11-29 22:09:18 | INFO     | Total Requests: 1000
+2024-11-29 22:09:18 | INFO     | Pipeline: [{'$group': {'_id': '$top_content', 'total_views': {'$sum': '$engagement_metrics.total_views'}}}, {'$sort': {'total_views': -1}}, {'$limit': 5}]
+2024-11-29 22:09:20 | INFO     | 
+==================================================
+2024-11-29 22:09:20 | INFO     | Performance Metrics for: Global Content Trends
+2024-11-29 22:09:20 | INFO     | ==================================================
+2024-11-29 22:09:20 | INFO     | Total Execution Time          : 2042.63 ms
+2024-11-29 22:09:20 | INFO     | Throughput                    : 489.56 queries/sec
+2024-11-29 22:09:20 | INFO     | Average Response Time         : 140.64 ms
+2024-11-29 22:09:20 | INFO     | Minimum Response Time         : 5.31 ms
+2024-11-29 22:09:20 | INFO     | Maximum Response Time         : 471.54 ms
+2024-11-29 22:09:20 | INFO     | Response Time Std Deviation   : 87.70 ms
+2024-11-29 22:09:20 | INFO     | CPU Utilization Increase      : 87.80 %
+2024-11-29 22:09:20 | INFO     | Memory Utilization Increase   : 0.20 %
+2024-11-29 22:09:20 | INFO     | ==================================================
+

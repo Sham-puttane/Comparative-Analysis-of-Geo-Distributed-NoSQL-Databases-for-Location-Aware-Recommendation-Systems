@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comprehensive Performance Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        .recommendation-card {
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .metric-item {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comprehensive Performance Dashboard</h1>
+    
+    <div>
+        <label for="region-select">Region:</label>
+        <select id="region-select">
+            <option>Europe</option>
+            <option>Asia</option>
+            <option>North America</option>
+            <option>South America</option>
+        </select>
+        
+        <label for="database-select">Database:</label>
+        <select id="database-select">
+            <option>MongoDB</option>
+            <option>DynamoDB</option>
+            <option>ElasticSearch</option>
+        </select>
+        
+        <label for="query-type-select">Query Type:</label>
+        <select id="query-type-select">
+            <option>Local</option>
+            <option>Global</option>
+        </select>
+    </div>
+    
+    <div id="metrics-chart"></div>
+    <div id="detailed-metrics"></div>
+    <div id="recommendations"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
